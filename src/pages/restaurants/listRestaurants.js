@@ -2,7 +2,6 @@ import React, { Component, useEffect, useState, useLayoutEffect } from "react";
 import { getListOfRestaurants } from "@/lib/api/restaurant/restaurants";
 import NavBar from "@/components/NavBar";
 import RestaurantCard from "@/components/RestaurantCard";
-import { readAsync } from "@/lib/windows/utils";
 import { useRouter } from "next/navigation";
 import { checkAuth } from "@/Auth/auth.js";
 
@@ -57,7 +56,6 @@ export default function Restaurants() {
                   );
                 })
               : "loading"}
-              {console.log('restaurantLists',restaurantLists)}
           </div>
         </div>
       </section>

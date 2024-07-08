@@ -14,7 +14,7 @@ export default function MenuCard({ name, rating, price }) {
           <h2 className="title-font font-medium text-lg text-gray-900">
             {name}
           </h2>
-          <h3 className="text-gray-500 mb-3">Rupees-{price}</h3>
+          <h3 className="text-gray-500 mb-3">₹-{price}</h3>
           <span className="inline-flex">
             {Array.from({ length: 5 }, (_, index) => (
               <span key={index} className="mr-1">
