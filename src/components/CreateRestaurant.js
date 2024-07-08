@@ -141,7 +141,7 @@ export default function CreateRestaurant() {
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full lg:w-1/2 px-3 mb-6 lg:mb-0">
-                <label className="block">Hotel Name</label>
+                <label className="block text-gray-700 mb-1">Hotel Name</label>
                 <input
                   {...register("hotel_name")}
                   className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
@@ -151,7 +151,7 @@ export default function CreateRestaurant() {
                 )}
               </div>
               <div className="w-full lg:w-1/2 px-3">
-                <label className="block">Description</label>
+                <label className="block text-gray-700 mb-1">Description</label>
                 <input
                   {...register("description")}
                   className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
@@ -163,7 +163,7 @@ export default function CreateRestaurant() {
             </div>
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full lg:w-1/2 px-3 mb-6 lg:mb-0">
-                <label className="block">Location</label>
+                <label className="block text-gray-700 mb-1">Location</label>
                 <input
                   {...register("location")}
                   className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
@@ -173,7 +173,7 @@ export default function CreateRestaurant() {
                 )}
               </div>
               <div className="w-full lg:w-1/2 px-3">
-                <label className="block">Rating out of 5</label>
+                <label className="block text-gray-700 mb-1">Rating out of 5</label>
                 <input
                   {...register("rating")}
                   type="number"
@@ -194,7 +194,7 @@ export default function CreateRestaurant() {
                 className="flex flex-wrap  items-center justify-between "
               >
                 <div className="w-full lg:w-1/4 px-3 mb-6 lg:mb-0">
-                  <label className="block">Dish Name</label>
+                  <label className="block text-gray-700 mb-1">Dish Name</label>
                   <input
                     {...register(`menu.${index}.dish_name`)}
                     className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
@@ -206,7 +206,7 @@ export default function CreateRestaurant() {
                   )}
                 </div>
                 <div className="w-full lg:w-1/4 px-3 mb-6 lg:mb-0">
-                  <label className="block">Price</label>
+                  <label className="block text-gray-700 mb-1">Price</label>
                   <input
                     {...register(`menu.${index}.price`)}
                     type="number"
@@ -219,7 +219,7 @@ export default function CreateRestaurant() {
                   )}
                 </div>
                 <div className="w-full h-20 lg:w-1/4 px-3 mb-6 lg:mb-0">
-                  <label className="block">Rating</label>
+                  <label className="block text-gray-700 mb-1">Rating</label>
                   <input
                     {...register(`menu.${index}.rating`)}
                     type="number"
