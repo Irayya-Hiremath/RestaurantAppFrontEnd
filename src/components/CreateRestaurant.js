@@ -233,16 +233,20 @@ export default function CreateRestaurant() {
                   >
                     Delete
                   </button>
-                  <button
+
+                </div>
+              </div>
+            ))}
+            <div className="flex justify-center">
+            <button
                     type="button"
                     onClick={handleAddDish}
                     className="bg-green-500 text-white rounded p-2"
                   >
                     Add Dish
                   </button>
-                </div>
-              </div>
-            ))}
+            </div>
+
             <button
               type="submit"
               className="bg-blue-500 text-white rounded p-2 px-4 mx-4"

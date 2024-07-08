@@ -68,7 +68,7 @@ export default function RestaurantDetail() {
             onClick={() => {
               deleteRestaurantData(restaurantDetail._id);
             }}
-            className="flex mx-auto mx-2 text-white bg-red-600 border-0 py-2 px-8 focus:outline-none hover:bg-red-700 rounded text-lg"
+            className="flex  mx-2 text-white bg-red-600 border-0 py-2 px-8 focus:outline-none hover:bg-red-700 rounded text-lg"
           >
             Delete Restaurant
           </button>
