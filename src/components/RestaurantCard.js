@@ -8,22 +8,20 @@ export default function RestaurantCard({
   action,
   location,
 }) {
-
   return (
     <div
       onClick={() => {
-        action?action():null;
+        action ? action() : null;
       }}
       className="p-4 md:w-1/3 hover:cursor-pointer "
     >
       <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg bg-white shadow-2xl overflow-hidden">
         <img
           className="lg:h-48 md:h-36 w-full object-cover object-center"
-          src="/images/resto.JPG"
+          // src="/images/resto.jpg"
           alt="image"
-          
         />
-     
+
         <div className="p-6">
           <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
             Hotel
@@ -39,22 +37,22 @@ export default function RestaurantCard({
           </p>
           <div className="flex my-2">
             <a>
-            <svg
-              className="h-6 w-6 text-orange-500"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              stroke-width="2"
-              stroke="currentColor"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              {" "}
-              <path stroke="none" d="M0 0h24v24H0z" />{" "}
-              <circle cx="12" cy="11" r="3" />{" "}
-              <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1 -2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z" />
-            </svg>
+              <svg
+                className="h-6 w-6 text-orange-500"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                {" "}
+                <path stroke="none" d="M0 0h24v24H0z" />{" "}
+                <circle cx="12" cy="11" r="3" />{" "}
+                <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1 -2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z" />
+              </svg>
             </a>
             <p className="leading-relaxed mb-3">{location}</p>
           </div>
