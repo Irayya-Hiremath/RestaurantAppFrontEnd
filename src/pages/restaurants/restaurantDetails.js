@@ -1,10 +1,11 @@
-import { React, useState, useEffect } from "react";
+import { React, useState, useEffect,useLayoutEffect } from "react";
 import { useRouter } from "next/router";
 
 import { getDetailOfRestaurants,deleteRestaurant } from "@/lib/api/restaurant/restaurants";
 import MenuCard from "@/components/MenuCard";
 import RestaurantCard from "@/components/RestaurantCard";
 import NavBar from "@/components/NavBar";
+import { checkAuth } from "@/Auth/auth.js";
 
 export default function RestaurantDetail() {
   const router = useRouter();
@@ -44,6 +45,12 @@ export default function RestaurantDetail() {
       query: { id: id },
     });
   };
+
+  useLayoutEffect(() => {
+    checkAuth(router);
+
+    return undefined;
+  }, [router]);
   return (
     <section className="text-gray-600 body-font">
       <NavBar />

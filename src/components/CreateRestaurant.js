@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { React, useState, useEffect } from "react";
+import { React, useState, useEffect,useLayoutEffect } from "react";
 
 import { useForm, useFieldArray } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -12,6 +12,8 @@ import {
 } from "@/lib/api/restaurant/restaurants";
 import { useRouter } from "next/router";
 import { ToastContainer, toast } from "react-toastify";
+import { checkAuth } from "@/Auth/auth.js";
+
 
 const schema = yup.object().shape({
   hotel_name: yup.string().required("Hotel name is required"),
@@ -121,6 +123,11 @@ export default function CreateRestaurant() {
       }
     }
   };
+  useLayoutEffect(() => {
+    checkAuth(router);
+
+    return undefined;
+  }, [router]);
   return (
     <>
       <NavBar />
