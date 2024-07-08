@@ -1,5 +1,4 @@
 # ResturentApp
-# Clone the code 
-# Replace .env file
-# in root directory npm install
-# in root directory nom start
+ Clone the code 
+ in root directory npm install
+ in root directory npm run dev to start 
