@@ -15,7 +15,7 @@ export default function MenuCard({ name, rating, price }) {
             {name}
           </h2>
           <h3 className="text-gray-500 mb-3">Rupees-{price}</h3>
-          {/* <span className="inline-flex"> */}
+          <span className="inline-flex">
             {Array.from({ length: 5 }, (_, index) => (
               <span key={index} className="mr-1">
                 <Star filled={index < rating} />
