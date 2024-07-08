@@ -18,7 +18,7 @@ export default function RestaurantCard({
       <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg bg-white shadow-2xl overflow-hidden">
         <img
           className="lg:h-48 md:h-36 w-full object-cover object-center"
-          // src="/images/resto.jpg"
+           src="/images/resto.jpg"
           alt="image"
         />
 
