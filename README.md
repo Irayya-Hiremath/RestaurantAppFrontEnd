@@ -1,4 +1,4 @@
 # ResturentApp
- Clone the code 
- in root directory npm install
- in root directory npm run dev to start 
+ 1)Clone the code 
+ 2)in root directory npm install
+ 3)in root directory npm run dev to start 
