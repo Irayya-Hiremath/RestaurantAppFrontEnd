@@ -41,7 +41,7 @@ export default function Restaurants() {
     });
   };
   return (
-    <div>
+    <>
       <NavBar />
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
@@ -86,6 +86,6 @@ export default function Restaurants() {
           </div>
         </div>
       </section>
-    </div>
+    </>
   );
 }

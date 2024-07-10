@@ -9,8 +9,7 @@ export default function NavBar() {
   const currentPath = router.pathname;
 
   return (
-    <header className="text-gray-600 body-font  ">
-      <div className="container bg-zinc-200 fixed top-0 mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <div className=" bg-zinc-200 fixed top-0  flex flex-wrap p-5 flex-col md:flex-row w-[100%] items-center">
       <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -76,6 +75,5 @@ export default function NavBar() {
         </svg>
       </button>
     </div>
-    </header>
   );
 }
